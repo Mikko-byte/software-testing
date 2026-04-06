@@ -1,6 +1,6 @@
 # Software Testing Assignment
 
-[![Coverage Status](https://coveralls.io/repos/github/Mikko-byte/software-testing-assignment/badge.svg?branch=main)](https://coveralls.io/github/Mikko-byte/software-testing-assignment?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/Mikko-byte/software-testing/badge.svg?branch=main)](https://coveralls.io/github/Mikko-byte/software-testing?branch=main)
 
 ## Overview
 This project is part of a Software Testing course. The goal was to test a given JavaScript utility library using automated testing.
@@ -45,3 +45,7 @@ The following bugs were found and documented as GitHub issues:
 - camelCase.js → Unicode character bug
 
 See GitHub Issues for details.
+
+## Production Readiness
+
+Based on the identified issues, the library is not ready for production use without fixes.
