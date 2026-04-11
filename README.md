@@ -6,9 +6,26 @@
 This project is part of a Software Testing course. The goal was to test a given JavaScript utility library using automated testing.
 
 ## Tools Used
-- Testing framework: Jest
+- Testing Framework: Jest
 - CI/CD: GitHub Actions
-- Coverage reporting: Coveralls
+- Coverage Reporting: Coveralls
+- Version Control: Git and GitHub
+- Runtime Environment: Node.js
+
+## Test Coverage
+The achieved test coverage is:
+
+- Statements: ~61%
+- Branches: ~52%
+- Functions: ~58%
+- Lines: ~60%
+
+## Testing Approach
+- Unit tests were implemented for multiple functions in the `src` directory.
+- Both normal cases and edge cases were tested.
+- Invalid inputs were included to ensure robustness.
+- Internal helper functions were excluded from direct testing according to the assignment instructions.
+- Identified defects were documented as GitHub Issues.
 
 ## Tested Files
 
@@ -47,32 +64,6 @@ According to the assignment instructions, internal implementation files were not
 
 These files serve as internal helper functions and are not intended to be tested directly.
 
-
-## Test Coverage
-The achieved test coverage is:
-
-- Statements: ~61%
-- Branches: ~52%
-- Functions: ~58%
-- Lines: ~60%
-
-The required coverage (≥50%) is met.
-
-## Testing Approach
-- Unit tests were written for multiple functions in the `src` folder
-- Edge cases and invalid inputs were tested
-- Known bugs were identified during testing
-
-## Notes
-The source code was not modified, as the assignment focuses on testing.  
-Failing tests caused by bugs were skipped to allow the CI pipeline to pass.
-
-## Conclusion
-The project successfully:
-- Achieved the required test coverage
-- Identified multiple defects
-- Implemented automated testing and CI/CD
-
 ## Identified Issues
 The following bugs were found and documented as GitHub issues:
 
@@ -83,6 +74,26 @@ The following bugs were found and documented as GitHub issues:
 - camelCase.js → Unicode character bug
 
 See GitHub Issues for details.
+
+##  Continuous Integration
+A GitHub Actions workflow was implemented to automate testing and coverage reporting. The pipeline performs the following steps:
+
+1. Installs dependencies
+2. Runs unit tests using Jest
+3. Generates coverage reports
+4. Uploads results to Coveralls
+
+All tests are executed automatically on each push to the repository.
+
+## Notes
+The source code was not modified, as the assignment focuses on testing.  
+Failing tests caused by bugs were skipped to allow the CI pipeline to pass.
+
+## Conclusion
+The project successfully:
+- Achieved the required test coverage
+- Identified multiple defects
+- Implemented automated testing and CI/CD
 
 ## Production Readiness
 
